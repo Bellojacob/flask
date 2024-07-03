@@ -1,5 +1,3 @@
-{{ bootstrap.load_css() }}
-{{ bootstrap.load_js() }}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {{ bootstrap.load_css() }}
+    {{ bootstrap.load_js() }}   
 </head>
 <body>
     <h1>Jacob Bello : ASAP</h1>
     <p>Rendered from template</p>
     <div class="text-center">
-        <img src="images\code.jpg" class="rounded w-50">
+        <img src="static\images\code.jpg" class="rounded w-50">
         </div>
 </body>
-</html>
+</html> 
