@@ -23,3 +23,5 @@ def hello():
 def hello2():
   return render_template('template.html')
 
+# task 3 and 4 picture is the same because I forgot to take a picture 
+# while I was doing task 3 and added onto task 4
