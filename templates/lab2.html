@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{ bootstrap.load_css() }}
+    {{ bootstrap.load_js() }}   
+</head>
+<body>
+    <h1>Jacob Bello Lab 2</h1>
+    
+    <div class="text-center">
+        <img src="static\images\car.jpg" class="rounded w-50">
+        </div>
+
+        <ul>
+            {% for item in info['cars'] %}
+                <li> {{item}} </li>
+            {% endfor %}
+        </ul>
+</body>
+</html> 
