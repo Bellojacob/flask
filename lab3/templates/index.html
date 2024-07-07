@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <div class="container">
+        <h1>Add to Playlist</h1>
+
+        <form method="POST" action="/" class="mt-4">
+            {{ form.hidden_tag() }} <!-- CSRF token for security -->
+
+            <div class="form-group">
+                {{ form.song_title.label(class="form-label") }}
+                {{ form.song_title(class="form-control", size=32) }}
+            </div>
+
+            <div class="form-group mt-3">
+                {{ form.artist_name.label(class="form-label") }}
+                {{ form.artist_name(class="form-control", size=32) }}
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary mt-3">
+        </form>
+
+         <img src="static\images\lc.jpg" class="rounded w-50">
+    </div>
+</body>
+</html>
